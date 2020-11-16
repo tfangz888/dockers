@@ -1,9 +1,24 @@
-# kdb+ 32bit based on Ubuntu/i386 
-
 
 docker login  
 
 docker build -t tfangz/i386-q:0.1 /home/toby/dockers/i386-q/  
 
 docker push tfangz/i386-q  
+
+##########################################
+
+docker container run -it -v /tmp:/tmp tfangz/i386-q:0.1
+
+docker container exec -it [containerID]   /bin/bash
+
+cd; cp /tmp/q ./
+
+docker commit [containerID]
+
+docker build -t tfangz/i386-q:0.2 /home/toby/dockers/i386-q/ 
+docker push tfangz/i386-q 
+
+#######################################
+
+
 
