@@ -21,3 +21,6 @@ ENV HOSTNAME linux-host
 # apk add cmake
 # apk add libressl-dev
 # apk add libwebsockets-dev
+
+
+# apk add linux-headers for 0.3
