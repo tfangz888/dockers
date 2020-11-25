@@ -24,3 +24,5 @@ ENV HOSTNAME linux-host
 
 
 # apk add linux-headers for 0.3
+
+# apk add --no-cache make for 0.4
