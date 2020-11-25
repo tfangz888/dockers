@@ -15,7 +15,7 @@ cd; cp /tmp/q ./
 
 docker commit [containerID]
 
-docker build -t tfangz/i386-q:0.2 /home/toby/dockers/i386-q/ 
+docker build -t tfangz/i386-q:0.2 /home/toby/dockers/i386-q/   
 docker push tfangz/i386-q 
 
 #######################################
