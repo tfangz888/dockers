@@ -26,6 +26,7 @@ MAINTAINER toby
 # USER toby
 WORKDIR /tmp
 ENV HOSTNAME linux-host
+# apk 安装程序时如果需要代理,要设置代理  
 # ENV HTTP_PROXY proxy
 # ENV HTTPS_PROXY proxy
 
