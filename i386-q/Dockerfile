@@ -19,5 +19,5 @@ ENV HOSTNAME i386-q
 
 
 # 容器启动命令
-ENTRYPOINT ["/entrypoint.sh"]
+# ENTRYPOINT ["/entrypoint.sh"]
 
