@@ -4,6 +4,10 @@ FROM alpine:latest
 # 维护者信息
 MAINTAINER toby
 
+# Set Environment variable(s) for q and add to Unix PATH
+ENV QHOME /q
+ENV PATH ${PATH}:${QHOME}/l32/
+
 # 镜像操作命令
 
 
@@ -15,4 +19,4 @@ ENV HOSTNAME linux-host
 
 
 # 容器启动命令
-# CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+# ENTRYPOINT ["/entrypoint.sh"]
