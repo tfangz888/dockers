@@ -4,6 +4,10 @@ FROM i386/ubuntu:latest
 # 维护者信息
 MAINTAINER toby
 
+# Set env variables for q
+ENV QHOME /q
+ENV PATH ${PATH}:${QHOME}/l32/
+
 # 镜像操作命令
 
 
@@ -15,5 +19,5 @@ ENV HOSTNAME i386-q
 
 
 # 容器启动命令
-# CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+ENTRYPOINT ["/entrypoint.sh"]
 
