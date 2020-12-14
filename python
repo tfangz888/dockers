@@ -1,0 +1,4 @@
+https://hub.docker.com/_/python
+docker pull python:3.8.6-slim-buster
+docker pull python:3.8.6-alpine3.12
+https://github.com/jfloff/alpine-python
