@@ -27,3 +27,6 @@ git clone https://github.com/uNetworking/uSockets.git
 WITH_LIBUV=1 WITH_OPENSSL=1 CC=/usr/bin/clang-11 CXX=/usr/bin/clang++-11 make examples # 使用openssl
 WITH_LIBUV=1 CC=/usr/bin/clang-11 CXX=/usr/bin/clang++-11 make examples # 使用WolfSSL
 
+PerSocketData的用法
+https://github.com/uNetworking/uWebSockets/blob/master/misc/main.cpp
+
