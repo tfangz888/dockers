@@ -20,6 +20,8 @@ sudo rm -r uWebSockets
 #####################################################################################################
 最新版不支持cmake, 用以下命令编译例子
 docker pull teeks99/clang-ubuntu:latest
+docker container run -it -v /tmp:/tmp --rm teeks99/clang-ubuntu /bin/bash
+apt-get update -y
 apt-get install libuv1-dev libssl-dev libz-dev
 git clone https://github.com/uWebSockets/uWebSockets 
 cd uWebSockets
