@@ -1,4 +1,4 @@
-docker pull debian:bullseye # debain 11   
+docker pull debian:bullseye # debain 11   # stable 版
 docker pull debian:bullseye-slim # debain 11 瘦身版    
 
 docker pull debian:buster # debain 10   
